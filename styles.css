@@ -1,0 +1,222 @@
+/* Estilos gerais */
+.main-wrapper {
+  margin: 24px;
+  padding: 16px;
+  justify-content: center;
+  display: flex;
+}
+body {
+  background-color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  margin: 16;
+  padding: 8;
+}
+
+.about-container,
+.education-container,
+.portfolio-container,
+.contact-container {
+  min-width: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: #ffffff;
+}
+
+header{
+  padding: 5%;
+}
+
+/* Ajustes para telas maiores que 600px */
+@media screen and (min-width: 600px) {
+  .about,
+  .education,
+  .portfolio,
+  .contact {
+    width: 50%;
+  }
+}
+
+/* Ajustes para telas maiores que 900px */
+@media screen and (min-width: 900px) {
+  .about,
+  .education,
+  .portfolio,
+  .contact {
+    width: 50%;
+  }
+}
+
+/* Estilos do header */
+.info-text{
+  font-weight: lighter;
+  color: darkgrey;
+}
+.name {
+  color: #6b53a5;
+}
+
+.position {
+  color: #8b89e0;
+}
+
+.profile-image {
+  border-radius: 100%;
+  box-shadow: 0 0 0 4px #6b53a5;
+  max-height: 200px;
+  max-width: 200px;
+  transition: box-shadow,max-height,max-width 0.3s ease;
+}
+
+.profile-image:hover {
+  box-shadow: 0 0 0 8px #8b89e0;
+  max-height: 250px;
+  max-width: 250px;
+}
+
+/* Estilos da seção "Sobre mim" */
+.about {
+  background: linear-gradient(135deg, #245b80, #3ba6ee);
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+  word-wrap: break-word;
+}
+
+.about:hover {
+  opacity: 1;
+}
+
+/* Estilos da seção "Formação Educacional" */
+.education {
+  background: linear-gradient(135deg, #00505a, #03f4e0);
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+  word-wrap: break-word;
+}
+
+.education:hover {
+  opacity: 1;
+}
+
+.certificate {
+  display: flexbox;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.certificate-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.certificate-image:hover {
+  width: 100%;
+  border-radius: 15%;
+  height: auto;
+  transition: width 0.5s ease;
+}
+
+.certificate-text {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Estilos da seção "Portfólio" */
+.portfolio {
+  background: linear-gradient(135deg, #434c7e, #8fa1fa);
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+  word-wrap: break-word;
+}
+
+.portfolio:hover {
+  opacity: 1;
+}
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.portfolio-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+.portfolio-item a {
+  color: #d5a3ff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.portfolio-item a:hover {
+  color: #ffffff;
+}
+
+/* Estilos da seção "Contato" */
+.contact {
+  background: linear-gradient(135deg, #252d50, #7d7bfa);
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+}
+
+.contact:hover {
+  opacity: 1;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+.contact-item a {
+  color: #d5a3ff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: #ffffff;
+}
